@@ -25,8 +25,9 @@ main proc
     int 21h; interrupt
     ;Data is by default stored in AL
     mov a,al
-    mov ch,a 
-    
+    mov ch,a
+     
+    mov cl , 30h
     cmp ch,cl
     jl  negative
     jg positive
