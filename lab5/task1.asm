@@ -7,16 +7,15 @@
 
 
 MAIN PROC
-    MOV AL,1
-    CMP AL,0
+    MOV AX,-1
+    CMP AX,0
     JL GO
-    MOV AH,0
-    
+    JMP Exit
 
     GO:
-    MOV AH,0xFFh
-    ;mov AH,2
-    mov DL,AH
+    MOV BX, -1
+    mov AH,2
+    mov DX,BX
     int 21h
 
 Exit:
