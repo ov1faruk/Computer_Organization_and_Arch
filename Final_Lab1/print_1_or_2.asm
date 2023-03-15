@@ -1,9 +1,7 @@
 .MODEL SMALL
 .STACK 100h
 .DATA
-input db ?
-output1 db '1'
-output2 db '2'
+
 .CODE
 
 MAIN PROC
